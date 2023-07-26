@@ -1,0 +1,263 @@
+local KeyInput = nil
+local ValidKeys = {"PREMIUMBOYS223", "THANKSFORSHOWCASINGTMHUB", "ATLASISGAOTED09"} -- the valid keys are put in a table, you can put as many as you want here.
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "TMHub - Key System(Premium)", HidePremium = false, SaveConfig = true, IntroText = "Welcome To TMHub "..Player.Name.." "})
+
+OrionLib:MakeNotification({
+	Name = "Welcome To TMHub",
+	Content = "Thanks For Using TMHub, "..Player.DisplayName.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+-- The tab
+local KeyTab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- The textbox which will set the value "KeyInput" to whatever was entered into the textbox
+KeyTab:AddTextbox({
+	Name = "Enter Key: ",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		KeyInput = Value -- sets the "KeyInput" value to the text that has been entered in the textbox
+	end	  
+})
+
+-- The button which will check your entered key is one of the keys in the table
+
+KeyTab:AddButton({
+	Name = "Confirm Key " ..Player.Name.." ",
+	Callback = function()
+    	CheckKey() -- calls the function to check the key when pressed
+  	end    
+})
+
+function CheckKey() -- the function to check the key
+	if KeyInput ~= nil then -- checks that there is a key that has been entered
+		if table.find(ValidKeys, KeyInput) then -- looks for the entered key in the table
+			local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "TMHub - Chicago Remastered(Premium)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+
+OrionLib:MakeNotification({
+	Name = "Welcome To TMHub",
+	Content = "Thanks For Using TMHub, "..Player.DisplayName.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+
+--Main Tab
+local Main2Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Main2Tab:AddButton({
+	Name = "Anti Kick/Ban",
+	Callback = function()
+      		OrionLib:MakeNotification({
+	Name = "You Wont Get Kicked Anymore",
+	Content = "YOU A BAD BOY MR. "..Player.DisplayName.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+  	end    
+})
+
+local Section = Main2Tab:AddSection({
+	Name = "Idk What To Add Here, Give Me Suggestions Plz"
+})
+
+--Player Tab
+local PlayerTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+PlayerTab:AddButton({
+	Name = "Fly(X)",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Press X To Fly "..Player.Name.." ",
+			Content = "You Look At You Using SuperPowers, "..Player.DisplayName.." LOL",
+			Image = "rbxassetid://4483345998",
+			Time = 15
+		})
+  	end    
+})
+PlayerTab:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+	 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+   })
+   PlayerTab:AddSlider({
+	Name = "Jump Height",
+	Min = 50,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+	 game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+   })   
+
+   PlayerTab:AddButton({
+	Name = "Reset Character",
+	Callback = function()
+		OrionLib:MakeNotification({
+			Name = "Resetting Character "..Player.DisplayName.." ",
+			Content = "Reset The Character "..Player.DisplayName.." ",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+  	end    
+})  
+
+--Combat Tab
+local CombatTab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--Teleport Tab
+local TeleportTab = Window:MakeTab({
+	Name = "TP To Turfs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TeleportTab:AddButton({
+	Name = "TP To KTA",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "TP To CHD",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "TP To MG",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "TP To MF",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "TP To SNO",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "TP To PG",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+--AFK Tab
+local MoneyAmountTab = Window:MakeTab({
+	Name = "LeaderStats",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MoneyAmountTab:AddTextbox({
+	Name = "Enter How Money You Want(Saved, And Safe.)",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		
+	end	  
+})
+
+MoneyAmountTab:AddButton({
+	Name = "Put Money Amount",
+	Callback = function()
+        
+      		OrionLib:MakeNotification({
+	Name = "Done...",
+	Content = "Check Your Money :), "..Player.DisplayName.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+  	end    
+})
+
+MoneyAmountTab:AddToggle({
+	Name = "Money AFK Grind",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+local Section = MoneyAmountTab:AddSection({
+	Name = "DONT PUT A CRAZY AMOUNT OF MONEY, BE SMART."
+})
+
+
+--Creds Tab
+local CredsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+			OrionLib:MakeNotification({
+				Name = "Key System",
+				Content = "Valid key entered "..Player.DisplayNameName.." ",
+				Image = "rbxassetid://4483345998",
+				Time = 5
+			})
+
+		else
+			warn("Invalid key entered.")
+			OrionLib:MakeNotification({
+				Name = "Key System "..Player.Name.." ",
+				Content = "Invalid key entered.",
+				Image = "rbxassetid://4483345998",
+				Time = 5
+			})
+		end
+	else
+		warn("Please enter a key.")
+		OrionLib:MakeNotification({
+			Name = "Key System",
+			Content = "Please enter a key.",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+	end
+end
